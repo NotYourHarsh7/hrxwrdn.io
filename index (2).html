@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshwardhan Ahlawat | Portfolio</title>
+  <meta name="description" content="Portfolio of Harshwardhan Ahlawat — Electronics & VLSI Engineer at DTU." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      const saved = localStorage.getItem('theme');
+      const html = document.documentElement;
+      html.classList.remove('dark-theme', 'light-theme');
+      html.classList.add((saved || 'dark') + '-theme');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="logo">
+        <div class="logo-avatar">H</div>
+        <h2>HrxWrdn</h2>
+        <p class="logo-sub">Electronics &amp; VLSI @ DTU</p>
+      </div>
+      <nav>
+        <a href="#home" class="nav-link active" data-section="home"><span class="nav-icon">⌂</span> Home</a>
+        <a href="#about" class="nav-link" data-section="about"><span class="nav-icon">⊡</span> About</a>
+        <a href="#skills" class="nav-link" data-section="skills"><span class="nav-icon">⟨/⟩</span> Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects"><span class="nav-icon">▣</span> Projects</a>
+        <a href="#connect" class="nav-link" data-section="connect"><span class="nav-icon">✉</span> Connect</a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <div id="clock" class="sidebar-clock"></div>
+      <button id="theme-switcher" aria-label="Toggle Theme">
+        <span class="light-icon">☀️ Light</span>
+        <span class="dark-icon">⏾ Dark</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- HAMBURGER (mobile) -->
+  <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+
+  <!-- MAIN CONTENT -->
+  <main class="content" id="main-content">
+
+    <!-- HOME -->
+    <section id="home" class="section home">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-tag">// Hello, world.</div>
+        <h1>Harshwardhan<br /><span class="accent">Ahlawat</span></h1>
+        <p class="hero-sub">Electronics &amp; VLSI Design Technology<br />undergrad at <strong>Delhi Technological University</strong></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#connect" class="btn btn-ghost">Connect</a>
+        </div>
+        <div class="hero-scroll-hint">scroll down ↓</div>
+      </div>
+      <div class="floating-code">
+        <span>print("Hello, Stalkers!")</span>
+        <span>import life</span>
+        <span>while True: learn()</span>
+        <span>// stay curious</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-label">// 01</div>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Currently an <strong>Electronics Engineering &amp; VLSI Design Technology</strong> undergrad at DTU. I'm passionate about hardware design, embedded systems, and the intersection of electronics with software.</p>
+          <p>When I'm not deep in circuit diagrams or HDL code, I'm probably exploring open-source projects, tinkering with microcontrollers, or browsing GitHub at 2 AM.</p>
+          <p>// I want to KMS 💔🥀 (that's just my sense of humour — I'm doing great, thanks for asking.)</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">DTU</span>
+            <span class="stat-label">Electronics &amp; VLSI</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2025</span>
+            <span class="stat-label">Batch Year</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="section-label">// 02</div>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Electronics &amp; Hardware</h3>
+          <div class="skill-tags">
+            <span>VLSI Design</span>
+            <span>VHDL / Verilog</span>
+            <span>Circuit Analysis</span>
+            <span>Embedded Systems</span>
+            <span>Arduino</span>
+            <span>Raspberry Pi</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>C / C++</span>
+            <span>Python</span>
+            <span>HTML &amp; CSS</span>
+            <span>JavaScript</span>
+            <span>MATLAB</span>
+            <span>Bash</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <span>Git &amp; GitHub</span>
+            <span>Cadence</span>
+            <span>LTspice</span>
+            <span>Linux</span>
+            <span>VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="section-label">// 03</div>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-desc">Click on any project to dive deeper.</p>
+      <div class="project-grid">
+
+        <div class="project-card" data-project="vlsi-alu"
+          style="--card-color: #00e5ff;">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="card-tag">VLSI</span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <h3>4-bit ALU in VHDL</h3>
+          <p>Designed and simulated a 4-bit Arithmetic Logic Unit using VHDL with full test bench coverage.</p>
+          <div class="card-tech">
+            <span>VHDL</span><span>Vivado</span><span>Digital Logic</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-project="personal-site"
+          style="--card-color: #69ff47;">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="card-tag">Web</span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <h3>Personal Website</h3>
+          <p>This very portfolio — built with vanilla HTML, CSS &amp; JS. Features dark/light mode, live clock, and interactive project details.</p>
+          <div class="card-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-project="arduino-sensor"
+          style="--card-color: #ff6b6b;">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="card-tag">Embedded</span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <h3>Arduino Sensor Hub</h3>
+          <p>Multi-sensor data acquisition system using Arduino, reading temperature, humidity, and light data to a serial dashboard.</p>
+          <div class="card-tech">
+            <span>Arduino</span><span>C++</span><span>Serial Monitor</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-project="python-scripts"
+          style="--card-color: #ffd93d;">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="card-tag">Python</span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <h3>Python Automation Scripts</h3>
+          <p>A collection of utility scripts for file organisation, web scraping, and academic workflow automation.</p>
+          <div class="card-tech">
+            <span>Python</span><span>BeautifulSoup</span><span>OS Module</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORDS OF WISDOM -->
+    <section id="wisdom" class="section wisdom">
+      <div class="wisdom-inner">
+        <div class="wisdom-label">// words of wisdom</div>
+        <blockquote id="wisdom-quote"></blockquote>
+        <button id="new-quote-btn" class="btn btn-ghost btn-sm">New Quote ↻</button>
+      </div>
+    </section>
+
+    <!-- CONNECT -->
+    <section id="connect" class="section connect">
+      <div class="section-label">// 04</div>
+      <h2 class="section-title">Connect</h2>
+      <p class="section-desc">// You can reach out to me on:</p>
+      <div class="connect-links">
+        <a href="https://github.com/NotYourHarsh7" class="connect-card" id="github" target="_blank">
+          <span class="connect-icon">⌥</span>
+          <span class="connect-name">GitHub</span>
+          <span class="connect-handle">@NotYourHarsh7</span>
+        </a>
+        <a href="https://www.linkedin.com/in/harshwardhanahlawat/" class="connect-card" id="linkedin" target="_blank">
+          <span class="connect-icon">in</span>
+          <span class="connect-name">LinkedIn</span>
+          <span class="connect-handle">harshwardhanahlawat</span>
+        </a>
+        <a href="mailto:harshwardhan@example.com" class="connect-card" id="email" target="_blank">
+          <span class="connect-icon">@</span>
+          <span class="connect-name">Email</span>
+          <span class="connect-handle">Send a message</span>
+        </a>
+        <a href="https://wa.me/7302307918" class="connect-card" id="whatsapp" target="_blank">
+          <span class="connect-icon">✆</span>
+          <span class="connect-name">WhatsApp</span>
+          <span class="connect-handle">+91 7302307918</span>
+        </a>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- PROJECT DETAIL OVERLAY -->
+  <div class="project-overlay" id="project-overlay" aria-hidden="true">
+    <div class="overlay-backdrop" id="overlay-backdrop"></div>
+    <div class="overlay-panel" id="overlay-panel" role="dialog" aria-modal="true">
+      <button class="overlay-close" id="overlay-close" aria-label="Close">✕</button>
+      <div class="overlay-scroll">
+        <div class="overlay-tag" id="ol-tag"></div>
+        <h2 class="overlay-title" id="ol-title"></h2>
+        <p class="overlay-summary" id="ol-summary"></p>
+
+        <div class="overlay-section">
+          <h3>What I Did</h3>
+          <p id="ol-what"></p>
+        </div>
+
+        <div class="overlay-section">
+          <h3>How I Did It</h3>
+          <p id="ol-how"></p>
+        </div>
+
+        <div class="overlay-tech-block" id="ol-tech-block">
+          <h3>Tech Stack</h3>
+          <div class="overlay-tags" id="ol-tech"></div>
+        </div>
+
+        <div class="overlay-links" id="ol-links"></div>
+
+        <div class="overlay-media" id="ol-media"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&lt;/&gt; Harshwardhan Ahlawat &copy; <span id="footer-year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
